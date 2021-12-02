@@ -18,11 +18,10 @@ class CreateProductosTable extends Migration
             $table->string('cod_prod');
             $table->string('nombre',150);
             $table->integer('precio');
-            $table->integer('cant');
-            $table->string('tipo_serv');
+            $table->string('tp_serv');
             $table->integer('stock');
             $table->date('fec_venc');
-            $table->char('estado',1);
+            $table->char('edo',1);
 
             $table->timestamps();
         });

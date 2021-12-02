@@ -20,6 +20,8 @@ class CreateObsequiosTable extends Migration
             $table->char('edo',1);
 
             $table->foreignId('id_prod')->constrained('productos');
+            $table->foreignId('id_clien')->constrained('clientes');
+
             $table->timestamps();
         });
     }

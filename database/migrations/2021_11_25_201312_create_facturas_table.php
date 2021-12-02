@@ -22,7 +22,7 @@ class CreateFacturasTable extends Migration
             $table->integer('iva');
             $table->char('edo',1);
 
-            $table->foreignId("id_cliente")->constrained('clientes');
+            $table->foreignId("id_clien")->constrained('clientes');
             $table->timestamps();
         });
     }
