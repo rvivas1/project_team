@@ -33,9 +33,9 @@ class ClienteController extends Controller
         $cliente->save();
     }
 
-    public function destroy(Request $request) {
-       $cliente= Cliente::findOrFail($request->id);
+    // public function destroy(Request $request) {
+    //    $cliente= Cliente::findOrFail($request->id);
 
-       $cliente->delete();
-    }
+    //    $cliente->delete();
+    // }
 }

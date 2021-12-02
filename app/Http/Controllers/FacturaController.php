@@ -63,12 +63,12 @@ class FacturaController extends Controller
 
     public function update(Request $request){
         $factura= Factura:: findOrFail($request->id);
-        $factura-> fecha = $fecha;
+        $factura-> fecha = $request-> fecha;
         $factura-> total = $request-> total;
         $factura-> valor_pago = $request-> valor_pago;
         $factura-> form_pago = $request-> form_pago;
         $factura-> iva = $request-> iva;
-        $factura-> estado = $request-> estado;
+        $factura-> edo = $request-> edo;
 
         
         $factura-> id_clien = $request-> id_clien;
